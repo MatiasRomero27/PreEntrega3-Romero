@@ -1,0 +1,65 @@
+/*cards de las camisetas*/
+
+.card{
+	
+	@if $campeon == nadie {
+		background-image: $bg-cards;		
+	} @else if $campeon == brasil{
+		background-image: $bg-brasil;}
+	border: groove .1rem $color-negro;
+	border-radius: 20px;
+	padding: .3rem;
+	margin: 4rem 2rem;
+	box-shadow: 5px  6px 100px;
+	overflow: hidden;
+	transition: all 0.10s;
+}
+
+.container{
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container .card:hover{
+	@if $campeon == nadie {
+		box-shadow:  50px  50px 100px #2adfec;		
+	} @else if $campeon == brasil{
+		box-shadow: 50px  50px 100px #37e246;}
+	transform: translateY(-15px);
+	
+}
+
+.card__img{
+	@include sizes(320px, 320px);
+	margin-left: 1rem;
+}
+
+.card__titulo{
+	font-size: 1.5em;
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+}
+
+.card__precio{
+	border: outset .1rem;
+	border-radius: 15rem;
+	margin: 1rem;
+	background:$color-blanco;
+}
+
+.boton{
+	padding-inline: 2rem;
+	padding-top: 1rem;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 15p	x;
+	box-shadow: 2px 2px 10px;
+	cursor: pointer;
+}
+
+.boton:hover{
+	color: $color-rojo;
+	background-color: #DEDEDE ;
+}
+

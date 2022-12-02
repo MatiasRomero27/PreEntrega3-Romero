@@ -1,0 +1,31 @@
+
+/*banner  y destacado*/
+
+.banner{
+	@include display-alignitems;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 35rem;
+	color: $color-blanco ;
+	background-image: linear-gradient(0deg, 
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url("../img/fondo/maradona-campeon.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.destacado{
+ 	background-image:$bg-header;
+ 	box-shadow:6px 6px 100px;
+	margin: auto;
+	padding: 1rem;
+}
+
+.destacado:hover{
+	background-color: $color-blanco;
+}
+

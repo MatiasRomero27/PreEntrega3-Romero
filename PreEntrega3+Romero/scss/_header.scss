@@ -1,0 +1,35 @@
+
+/*header*/
+
+header{
+	background-image:$bg-header;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 10px;
+	margin: 0;
+}
+
+.logo{
+	@include display-alignitems;
+}
+
+.logo-img{
+	height: 7rem;
+	margin-right: 2rem;
+}
+
+.menu {
+	@include display-alignitems;
+	list-style: none; 
+}
+
+
+nav a{
+	font-weight: 600;
+	padding-right: 1rem ;
+}
+
+nav a:hover{
+	color: #BBFF94  ;
+	transition: all .6s;
+}

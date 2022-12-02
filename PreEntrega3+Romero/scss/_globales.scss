@@ -1,0 +1,27 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+ }
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	background-image: url("../img/fondo/cesped.webp");
+	background-repeat: no-repeat;
+	background-attachment:fixed ;
+	background-size: cover;
+
+}
+
+a{
+	text-decoration: none;
+	color: $color-negro;
+}
+
+img {
+	max-width: 100%;
+}
+

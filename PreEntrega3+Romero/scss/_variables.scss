@@ -1,0 +1,24 @@
+
+/*variables para colores*/
+
+$bg-header:linear-gradient(to bottom, #59FFA1, #5977FF, #9068ED );
+$bg-brasil:linear-gradient(to bottom, #2cd83a, #69de2f, #90e327, #b3e723, #d2eb26, #d2eb26, #d2eb26, #d2eb26, #b3e723, #90e327, #69de2f, #2cd83a);
+$bg-cards:linear-gradient(to bottom, #60E2FF , #FFFFFF, #60E2FF );  
+$color-blanco:#FFFFFF;
+$color-rojo:#e83d2a;
+$color-negro:#000000;
+
+$campeon:nadie ;
+
+/*MIXIN*/
+@mixin display-alignitems {
+    display: flex ;
+    align-items: center;
+}
+
+/*MIXIN PARÁMETRO*/
+
+@mixin sizes ($alto,$ancho) {
+    width: $ancho;
+    height: $alto;
+}
